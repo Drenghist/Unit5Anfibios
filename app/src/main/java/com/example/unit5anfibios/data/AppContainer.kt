@@ -12,12 +12,12 @@ interface AppContainer {
 
 class DefaultAppContainer : AppContainer {
 
-    private val BASE_URL =
+    private val baseUrl =
         "https://android-kotlin-fun-mars-server.appspot.com"
 
     private val retrofit : Retrofit = Retrofit.Builder()
         .addConverterFactory(Json.asConverterFactory("Application/json".toMediaType()))
-        .baseUrl(BASE_URL)
+        .baseUrl(baseUrl)
         .build()
 
     private val retrofitService: AnfibiosApiService by lazy {
