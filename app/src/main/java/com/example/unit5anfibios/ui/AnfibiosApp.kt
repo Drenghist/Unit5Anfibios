@@ -30,7 +30,7 @@ fun AnfibiosApp() {
         Surface(
             modifier = Modifier.fillMaxSize()
         ) {
-            //val anfibiosViewModel: AnfibiosViewModel = viewModel(factory = AnfibiosViewModel.Factory)
+            val anfibiosViewModel: AnfibiosViewModel = viewModel(factory = AnfibiosViewModel.Factory)
             HomeScreen(
                 //marsUiState = marsViewModel.marsUiState,
                 contentPadding = it,
