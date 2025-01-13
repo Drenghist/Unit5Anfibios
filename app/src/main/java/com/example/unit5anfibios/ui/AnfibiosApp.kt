@@ -32,9 +32,9 @@ fun AnfibiosApp() {
         ) {
             val anfibiosViewModel: AnfibiosViewModel = viewModel(factory = AnfibiosViewModel.Factory)
             HomeScreen(
-                //marsUiState = marsViewModel.marsUiState,
+                anfibiosUiState = anfibiosViewModel.anfibiosUiState,
                 contentPadding = it,
-                //retryAction = marsViewModel::getMarsPhotos
+                retryAction = anfibiosViewModel::getAnfibiosFotos
             )
         }
     }

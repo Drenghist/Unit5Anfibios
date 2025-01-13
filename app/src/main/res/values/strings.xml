@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Repositorio de Anfibios</string>
+    <string name="loading_image">loading image</string>
+    <string name="error_de_carga">Error de carga</string>
+    <string name="retry">Reintentar</string>
 </resources>
